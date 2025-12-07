@@ -6,6 +6,10 @@ int main() {
     int n;
     cin >> n;
 
-    cout << (n >= 80 ? "pass" : "x more score");
+    if(n >= 80) {
+        cout << "pass";
+    } else {
+        cout << 80 - n << " more score";
+    }
     return 0;
 }
